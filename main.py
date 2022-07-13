@@ -12,6 +12,8 @@ import os
 #         self.speech.save("text.mp3")
 #         playsound("text.mp3")
 
+# Function for Text to Speech
+
 
 def speak(text, lan):
     speech = gTTS(text, lang="en", slow=False)
@@ -29,7 +31,6 @@ root.configure(background="white")
 Heading = "Text to Speech Recognizer"
 Label(root, text=Heading, font=("Times New Roman", 20, "bold"),
       bg="white", wrap=True, wraplength=450).place(x=47, y=30)
-
 
 # entry = Entry(root, text="Enter", width=24, bd=4, font=14)
 entry = Text(root, width=24, height=4, bd=4, font=14)
